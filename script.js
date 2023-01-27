@@ -1,10 +1,12 @@
+function main(){
 let televisions = document.querySelectorAll('.tel');
 televisions.forEach((e) => {
     checkRating(e, parseInt(e.children.item(7).innerHTML.replace("/", "").replace("5", "")));
 });
 avg(televisions);
-console.log(check_tel(televisions))
-
+check_tel(televisions);
+ex5();
+}
 
 
 function checkRating(current_tel, numberOfRatnig) {
@@ -60,4 +62,4 @@ function ex5() {
     });
 }
 
-ex5();
+main();
