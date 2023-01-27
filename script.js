@@ -35,7 +35,7 @@ function check_tel(arr_tel) {
             }
         }
     });
-    return favTel;
+    return favTel.children.item(0).innerHTML;
 }
 
 
